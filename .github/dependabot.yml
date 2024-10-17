@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "terraform"
+    directories:
+    - "/infra/serviceA"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "terraform"
+    directories:
+    - "/infra/serviceB"
+    schedule:
+      interval: "daily"
