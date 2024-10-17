@@ -4,7 +4,12 @@ updates:
     directories:
     - "/infra/serviceA"
     groups:
-      terraform-serviceA:
+      ver-terraform-serviceA:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      sec-terraform-serviceA:
+        applies-to: security-updates
         patterns:
           - "*"
     schedule:
@@ -13,7 +18,12 @@ updates:
     directories:
     - "/infra/serviceB"
     groups:
-      terraform-serviceB:
+      ver-terraform-serviceB:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      sec-terraform-serviceB:
+        applies-to: security-updates
         patterns:
           - "*"
     schedule:
