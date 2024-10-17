@@ -3,10 +3,18 @@ updates:
   - package-ecosystem: "terraform"
     directories:
     - "/infra/serviceA"
+    groups:
+      terraform-serviceA:
+        patterns:
+          - "*"
     schedule:
       interval: "daily"
   - package-ecosystem: "terraform"
     directories:
     - "/infra/serviceB"
+    groups:
+      terraform-serviceB:
+        patterns:
+          - "*"
     schedule:
       interval: "daily"
