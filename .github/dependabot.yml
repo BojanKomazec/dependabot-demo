@@ -4,7 +4,7 @@ updates:
     directories:
     - "/infra/serviceA"
     groups:
-      ver-terraform-serviceA:
+      ver-terraform-service:
         applies-to: version-updates
         patterns:
           - "*"
@@ -18,7 +18,7 @@ updates:
     directories:
     - "/infra/serviceB"
     groups:
-      ver-terraform-serviceB:
+      ver-terraform-service:
         applies-to: version-updates
         patterns:
           - "*"
